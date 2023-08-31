@@ -54,6 +54,26 @@
 	border-radius: 1rem;
 }
 
+@media (max-aspect-ratio: 8/6) {
+	body * {
+		display: none !important;
+	}
+
+	.mobile-block {
+		z-index: 999999;
+		position: fixed;
+		display: flex !important;
+		align-items: center;
+		justify-content: center;
+		width: 100vw;
+		height: 100vh;
+		background-color: var(--color-dark-blue);
+		text-align: center;
+		font-weight: 600;
+		font-size: 2rem;
+	}
+}
+
 .btn {
 	transition: all 300ms;
 	display: flex;
