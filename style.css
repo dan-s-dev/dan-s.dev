@@ -362,6 +362,19 @@
 	justify-content: center;
 	margin-top: -3.5rem;
 }
+
+.hero > p {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: fixed;
+	color: var(--color-text-dark);
+	font-weight: 400;
+	/* opacity: 70%; */
+	/* transform: translate(-3rem, 4rem); */
+	top: -.75rem;
+}
+
 .heading-3.wd {
 	margin-top: -3rem;
 	-moz-transform: translateY(1.5rem);
