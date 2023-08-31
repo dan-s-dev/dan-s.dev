@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="stylesheet" href="./style.css" />
+	<link rel="icon" type="image/x-icon" href="./img/portfolio_favicon.ico" />
+	<title>Dan S - Graphic Design</title>
+</head>
+
+<body>
+	<input type="checkbox" id="mobile-nav" style="display: none; position: fixed; z-index: 999" />
+	<header class="header">
+		<nav class="nav-container" id="nav-container">
+			<div class="home">
+				<button class="btn" onclick="scrollToHome()" style="border: none">
+					Back To Top
+				</button>
+				<button class="btn" onclick="location.href='./index.html'" style="border: none">
+					Web Design ⇄
+				</button>
+			</div>
+			<div class="btn-container desktop">
+				<button class="btn" onclick="scrollToDesigns()" style="border: none">
+					Works
+				</button>
+
+				<!-- <button class="btn" onclick="scrollToProjects()" style="border: none;">Projects</button>
+        <button class="btn" onclick="scrollToTech()" style="border: none;">Technologies</button> -->
+			</div>
+			<section class="hero" id="hero">
+				<h1 class="heading-1">Dan S</h1>
+				<h3 class="heading-3 gd">Graphic 🎨 Design</h3>
+			</section>
+			<div class="lighting-mode">
+				<img class="lighting-icon" id="sun" src="./img/icons/SVG/icon_sun.svg" alt="">
+				<img class="lighting-icon" id="moon" src="./img/icons/SVG/icon_moon.svg" alt="">
+				<input type="checkbox" id="lighting" name="lighting" style="display: none;">
+				<label for="lighting" id="lightingLabel" onclick="lightingMode()"></label>
+				<div id="lightingButton"></div>
+			</div>
+		</nav>
+		<div class="hero-links">
+			<a href="https://www.linkedin.com/in/dan-sessoms-11731a141/"></a>
+			<a href="https://github.com/Rocket-Man-Dan"></a>
+			<a href="./documents/resume.pdf"></a>
+		</div>
+		<div class="hero-links-scroll">
+			<a href="https://www.linkedin.com/in/dan-sessoms-11731a141/"></a>
+			<a href="https://github.com/Rocket-Man-Dan"></a>
+			<a href="./documents/resume.pdf"></a>
+		</div>
+		<div class="btn-burger-container">
+			<label class="btn-burger" for="mobile-nav"></label>
+		</div>
+		<nav class="mobile-nav-container">
+			<button class="btn mobile" onclick="scrollToHome()" style="border: none">
+				Home
+			</button>
+
+			<button class="btn mobile" onclick="scrollToGraphicDesign()" style="border: none">
+				Graphic <br />
+				Design
+			</button>
+			<button class="btn mobile" onclick="scrollToMotionGraphics()" style="border: none">
+				Motion <br />
+				Graphics
+			</button>
+			<button class="btn mobile" onclick="scrollToInfoGraphics()" style="border: none">
+				Infographics
+			</button>
+			<button class="btn mobile" onclick="location.href='https://dan-s.dev';"
+				style="border: none; background-color: rgb(var(--color-light-blue))">
+				Web<br />
+				Design
+			</button>
+
+			<div></div>
+		</nav>
+	</header>
+	<div class="header-spacer" id="home"></div>
+
+	<input type="radio" name="designTypes" id="radio1" checked>
+	<input type="radio" name="designTypes" id="radio2">
+	<input type="radio" name="designTypes" id="radio3">
+
+	<div class="design-filter" >
+		<label class="radioTypeBtn" for="radio1" id="label1" onclick="scrollToDesigns()">Logo Designs</label>
+		<label class="radioTypeBtn" for="radio2" id="label2" onclick="scrollToDesigns()">Motion Graphics</label>
+		<label class="radioTypeBtn" for="radio3" id="label3" onclick="scrollToDesigns()">Infographics</label>
+	</div>
+
+	<section class="logo-designs" id="Designs">
+
+		<div class="portfolio-group type-logo">
+			<h2>Doge Buddy</h2>
+			<div class="carousel-btn left" data-index="unset">➤</div>
+			<div class="carousel-btn right" data-index="unset">➤</div>
+			<div class="item-container social-slider">
+				<div class="slider-container">
+					<div class="slide"><img class="social-video-thumb" src="./img/portfolio_items/logo_dogebuddy_color_1024_px.png" alt=""></div>
+					<div class="slide"><img class="social-video-thumb" src="./img/portfolio_items/logo_dogebuddy_blackwhite_1024_px.png" alt=""></div>
+					<div class="slide"><img class="social-video-thumb" src="./img/portfolio_items/logo_text_dogebuddy_color_1024_px.png" alt=""></div>
+					<div class="slide"><img class="social-video-thumb" src="./img/portfolio_items/logo_text_dogebuddy_white_1024_px.png" alt=""></div>
+					<div class="slide"><img class="social-video-thumb" src="./img/portfolio_items/logo_text_dogebuddy_black_1024_px.png" alt=""></div>
+					<div class="slide"><div class="favicon-frame"><p>Doge Buddy - Private Label Pet Supplies</p><span>×</span></div><img class="social-video-thumb favicon-item" src="./img/portfolio_items/favicon_dogebuddy_256px.png" alt=""></div>
+				</div>
+			</div>
+			<div class="tag-container">
+				<h4>all vector</h4>
+				<h4>svg filters</h4>
+				<h4>color</h4>
+				<h4>black & white</h4>
+				<h4>logo design</h4>
+				<h4>wordmark design</h4>
+				<h4>favicon</h4>
+			</div>
+		</div>
+		
+		<div class="portfolio-group type-logo">
+			<h2>Militia USA</h2>
+			<div class="carousel-btn left" data-index="unset">➤</div>
+			<div class="carousel-btn right" data-index="unset">➤</div>
+			<div class="item-container social-slider">
+				<div class="slider-container">
+					<div class="slide"><img class="social-video-thumb" src="./img/portfolio_items/logo_militiaUSA_shaded_1024.png" alt=""></div>
+					<div class="slide"><img class="social-video-thumb" src="./img/portfolio_items/logo_militiaUSA_color_1024.png" alt=""></div>
+					<div class="slide"><img class="social-video-thumb" src="./img/portfolio_items/logo_militiaUSA_white_1024.png" alt=""></div>
+					<div class="slide"><img class="social-video-thumb" src="./img/portfolio_items/logo_militiaUSA_black_1024.png" alt=""></div>
+					<div class="slide"><img class="social-video-thumb" src="./img/portfolio_items/logo_militiaUSA_text_color_1024.png" alt=""></div>
+					<div class="slide"><img class="social-video-thumb" src="./img/portfolio_items/logo_militiaUSA_text_white_1024.png" alt=""></div>
+					<div class="slide"><img class="social-video-thumb" src="./img/portfolio_items/logo_militiaUSA_text_black_1024.png" alt=""></div>
+					<div class="slide"><div class="favicon-frame"><p>Militia USA - American Apparal</p><span>×</span></div><img class="social-video-thumb favicon-item" src="./img/portfolio_items/favicon_militiaUSA_256.png" alt=""></div>
+				</div>
+			</div>
+			<div class="tag-container">
+				<h4>vector</h4>
+				<h4>raster</h4>
+				<h4>hand shaded</h4>
+				<h4>svg filters</h4>
+				<h4>color</h4>
+				<h4>black & white</h4>
+				<h4>logo design</h4>
+				<h4>wordmark design</h4>
+				<h4>favicon</h4>
+			</div>
+		</div>
+		
+		<div class="portfolio-group type-logo">
+			<h2>Birchwood Security Group</h2>
+			<div class="carousel-btn left" data-index="unset">➤</div>
+			<div class="carousel-btn right" data-index="unset">➤</div>
+			<div class="item-container social-slider">
+				<div class="slider-container">
+					<div class="slide"><img class="social-video-thumb" src="./img/portfolio_items/logo_BSG.png" alt=""></div>
+					<div class="slide"><img class="social-video-thumb" src="./img/portfolio_items/logo_BSG_white.png" alt=""></div>
+					<div class="slide"><img class="social-video-thumb" src="./img/portfolio_items/businesscard_BSG.png" alt=""></div>
+					<div class="slide"><div class="favicon-frame"><p>Birchwood Security Group</p><span>×</span></div><img class="social-video-thumb favicon-item" src="./img/portfolio_items/logo_BSG.png" alt=""></div>
+				</div>
+			</div>
+			<div class="tag-container">
+				<h4>all vector</h4>
+				<h4>color</h4>
+				<h4>logo design</h4>
+				<h4>black & white</h4>
+				<h4>business card design</h4>
+			</div>
+		</div>
+
+		<div class="portfolio-group type-logo">
+			<h2>Shadowscribe</h2>
+			<div class="carousel-btn left" data-index="unset">➤</div>
+			<div class="carousel-btn right" data-index="unset">➤</div>
+			<div class="item-container social-slider">
+				<div class="slider-container">
+					<div class="slide"><img class="social-video-thumb" src="./img/portfolio_items/logo_shadowscribe_color_1024.png" alt=""></div>
+					<div class="slide"><img class="social-video-thumb" src="./img/portfolio_items/logo_shadowscribe_white_1024.png" alt=""></div>
+					<div class="slide"><img class="social-video-thumb" src="./img/portfolio_items/logo_shadowscribe_black_1024.png" alt=""></div>
+					<div class="slide"><img class="social-video-thumb" src="./img/portfolio_items/logo_shadowscribe_text_color_1024.png" alt=""></div>
+					<div class="slide"><img class="social-video-thumb" src="./img/portfolio_items/logo_shadowscribe_text_white_1024.png" alt=""></div>
+					<div class="slide"><img class="social-video-thumb" src="./img/portfolio_items/logo_shadowscribe_text_black_1024.png" alt=""></div>
+					<div class="slide"><div class="favicon-frame"><p>Shadowscribe - web design</p><span>×</span></div><img class="social-video-thumb favicon-item" src="./img/portfolio_items/favicon_shadowscribe_256px.png" alt=""></div>
+				</div>
+			</div>
+			<div class="tag-container">
+				<h4>all vector</h4>
+				<h4>svg filters</h4>
+				<h4>color</h4>
+				<h4>black & white</h4>
+				<h4>logo design</h4>
+				<h4>wordmark design</h4>
+				<h4>favicon</h4>
+			</div>
+		</div>
+
+		<div class="portfolio-group type-motion">
+			<h2>Dash Animations</h2>
+			<div class="carousel-btn left" data-index="unset">➤</div>
+			<div class="carousel-btn right" data-index="unset">➤</div>
+			<div class="item-container social-slider">
+				<div class="slider-container">
+					<div class="slide"><video autoplay loop muted class="social-video-thumb" src="./video/portfolio items/MG_dash_spending_promo.mp4" alt=""></div>
+					<div class="slide"><video autoplay loop muted class="social-video-thumb" src="./video/portfolio items/MG_dash_evonode.mp4" alt=""></div>
+					<div class="slide"><video autoplay loop muted class="social-video-thumb" src="./video/portfolio items/MG_dash_dashdirect.mp4" alt=""></div>
+				</div>
+			</div>
+			<div class="tag-container">
+				<h4>after effects</h4>
+				<h4>illustrator</h4>
+				<h4>3D</h4>
+				<h4>blender</h4>
+				<h4><a href="https://www.youtube.com/watch?v=973E4knShBA">EvoNode video source</a>🡕</h4>
+			</div>
+		</div>
+		
+		<div class="portfolio-group type-motion">
+			<h2>Looping Animations</h2>
+			<div class="carousel-btn left" data-index="unset">➤</div>
+			<div class="carousel-btn right" data-index="unset">➤</div>
+			<div class="item-container social-slider">
+				<div class="slider-container">
+					<div class="slide"><video autoplay loop muted class="social-video-thumb small-vid" src="./video/portfolio items/MG_3D_dashlogo.mp4" alt=""></div>
+					<div class="slide"><video autoplay loop muted class="social-video-thumb small-vid" src="./video/portfolio items/MG_3D_digital_cash_network.mp4" alt=""></div>
+					<div class="slide"><video autoplay loop muted class="social-video-thumb small-vid" src="./video/portfolio items/MG_3D_ZCash.mp4" alt=""></div>
+				</div>
+			</div>
+			<div class="tag-container">
+				<h4>after effects</h4>
+				<h4>illustrator</h4>
+				<h4>3D</h4>
+				<h4>blender</h4>
+			</div>
+		</div>
+
+	</section>
+
+</body>
+<script src="./main.js?v=1"></script>
+
+</html>
