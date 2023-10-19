@@ -15,6 +15,13 @@
 			style="display: none; position: fixed; z-index: 999"
 		/>
 		<header class="header">
+			<div class="lighting-mode">
+				<img class="lighting-icon" id="sun" src="./img/icons/SVG/icon_sun.svg" alt="">
+				<img class="lighting-icon" id="moon" src="./img/icons/SVG/icon_moon.svg" alt="">
+				<input type="checkbox" id="lighting" name="lighting" style="display: none;">
+				<label for="lighting" id="lightingLabel" onclick="lightingMode()"></label>
+				<div id="lightingButton"></div>
+			</div>
 			<nav class="nav-container" id="nav-container">
 				<div class="home">
 					<button class="btn" onclick="scrollToHome()" style="border: none">
@@ -45,13 +52,7 @@
 					<h3 class="heading-3 wd">Web 💻 Design</h3>
 					<p>dan-s-dev@proton.me</p>
 				</section>
-				<div class="lighting-mode">
-					<img class="lighting-icon" id="sun" src="./img/icons/SVG/icon_sun.svg" alt="">
-					<img class="lighting-icon" id="moon" src="./img/icons/SVG/icon_moon.svg" alt="">
-					<input type="checkbox" id="lighting" name="lighting" style="display: none;">
-					<label for="lighting" id="lightingLabel" onclick="lightingMode()"></label>
-					<div id="lightingButton"></div>
-				</div>
+
 			</nav>
 			<div class="hero-links">
 				<a href="https://www.linkedin.com/in/dan-sessoms-11731a141/"></a>
@@ -64,47 +65,47 @@
 				<a href="./documents/resume.pdf"></a>
 			</div>
 			<div class="btn-burger-container">
-				<label class="btn-burger" for="mobile-nav"></label>
+				<label class="btn-burger" for="mobile-nav">
+					<img src="./img/icons/icon_mobile_nav_btn_white.svg" alt="">
+					<img src="./img/icons/icon_mobile_nav_btn.svg" alt="">
+				</label>
 			</div>
 			<nav class="mobile-nav-container">
 				<button
-					class="btn mobile"
+					class="nav-btn mobile"
 					onclick="scrollToHome()"
 					style="border: none"
 				>
-					Home
+					Back To Top
 				</button>
 
 				<button
-					class="btn mobile"
+					class="nav-btn mobile"
 					onclick="scrollToAbout()"
 					style="border: none"
 				>
 					About Me
 				</button>
 				<button
-					class="btn mobile"
+					class="nav-btn mobile"
 					onclick="scrollToProjects()"
 					style="border: none"
 				>
 					Projects
 				</button>
 				<button
-					class="btn mobile"
+					class="nav-btn mobile"
 					onclick="scrollToTech()"
 					style="border: none"
 				>
 					Tech
 				</button>
 				<button
-					class="btn mobile"
-					onclick="location.href='https://design.dan-s.dev';"
-					style="border: none; background-color: rgb(var(--color-light-blue))"
+					class="nav-btn mobile switch"
+					onclick="location.href='./design.html';"
 				>
-					Graphic<br />
-					Design
+					Graphic Design
 				</button>
-				<div></div>
 			</nav>
 		</header>
 		<div class="header-spacer" id="home"></div>
@@ -134,6 +135,7 @@
 			<h2>Projects</h2>
 			<article>
 				<p>Work and Personal projects.</p>
+				<p><i>links to projects and source code will be added soon!</i></p>
 			</article>
 
 		</section>

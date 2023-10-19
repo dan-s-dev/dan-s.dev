@@ -11,7 +11,6 @@
 </head>
 
 <body>
-	<div class="mobile-block">Mobile Version Not Currently Available, Please view on Desktop.</div>
 	<input type="checkbox" id="mobile-nav" style="display: none; position: fixed; z-index: 999" />
 	<header class="header">
 		<nav class="nav-container" id="nav-container">
@@ -55,31 +54,34 @@
 			<a href="./documents/resume.pdf"></a>
 		</div>
 		<div class="btn-burger-container">
-			<label class="btn-burger" for="mobile-nav"></label>
+			<label class="btn-burger" for="mobile-nav">
+				<img src="./img/icons/icon_mobile_nav_btn_white.svg" alt="">
+				<img src="./img/icons/icon_mobile_nav_btn.svg" alt="">
+			</label>
 		</div>
 		<nav class="mobile-nav-container">
-			<button class="btn mobile" onclick="scrollToHome()" style="border: none">
-				Home
+			<button
+				class="nav-btn mobile"
+				onclick="scrollToHome()"
+				style="border: none"
+			>
+				Back To Top
 			</button>
 
-			<button class="btn mobile" onclick="scrollToGraphicDesign()" style="border: none">
-				Graphic <br />
-				Design
-			</button>
-			<button class="btn mobile" onclick="scrollToMotionGraphics()" style="border: none">
-				Motion <br />
-				Graphics
-			</button>
-			<button class="btn mobile" onclick="scrollToInfoGraphics()" style="border: none">
-				Infographics
-			</button>
-			<button class="btn mobile" onclick="location.href='https://dan-s.dev';"
-				style="border: none; background-color: rgb(var(--color-light-blue))">
-				Web<br />
-				Design
+			<button
+				class="nav-btn mobile"
+				onclick="scrollToDesigns()"
+				style="border: none"
+			>
+				Works
 			</button>
 
-			<div></div>
+			<button
+				class="nav-btn mobile switch"
+				onclick="location.href='./index.html'"
+			>
+				Web Design
+			</button>
 		</nav>
 	</header>
 	<div class="header-spacer" id="home"></div>
@@ -91,7 +93,7 @@
 	<div class="design-filter" >
 		<label class="radioTypeBtn" for="radio1" id="label1" onclick="scrollToDesigns()">Logo Designs</label>
 		<label class="radioTypeBtn" for="radio2" id="label2" onclick="scrollToDesigns()">Motion Graphics</label>
-		<label class="radioTypeBtn" for="radio3" id="label3" onclick="scrollToDesigns()">Infographics</label>
+		<!-- <label class="radioTypeBtn" for="radio3" id="label3" onclick="scrollToDesigns()">Infographics</label> -->
 	</div>
 
 	<section class="logo-designs" id="Designs">

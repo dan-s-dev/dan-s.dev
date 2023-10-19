@@ -117,9 +117,11 @@ function lightingMode() {
         root.style.setProperty('--color-text-white', "#ffffff");
         root.style.setProperty('--color-text-med', "#a9ad9b");
         root.style.setProperty('--color-text-dark', "#231f20");
+        root.style.setProperty('--color-text-switch-btn', "#231f20");
 
         root.style.setProperty('--color-green', "#b5f200");
         root.style.setProperty('--color-light-blue', "#00e4ff");
+        root.style.setProperty('--color-light-blue-btn', "#00e4ff");
         root.style.setProperty('--color-dark-blue', "#009dd1");
         root.style.setProperty('--color-darker-blue', "#005fbd");
         root.style.setProperty('--color-works-bg', "rgba(0, 0, 0, 0.5)");
@@ -140,9 +142,11 @@ function lightingMode() {
         root.style.setProperty('--color-text-white', "#231f20");
         root.style.setProperty('--color-text-med', "#808377");
         root.style.setProperty('--color-text-dark', "#231f20");
+        root.style.setProperty('--color-text-switch-btn', "#231f20");
 
         root.style.setProperty('--color-green', "#009dd1");
         root.style.setProperty('--color-light-blue', "#00e4ff");
+        root.style.setProperty('--color-light-blue-btn', "#b5f200");
         root.style.setProperty('--color-dark-blue', "#009dd1");
         root.style.setProperty('--color-darker-blue', "#009dd1");
         root.style.setProperty('--color-works-bg', "rgba(0, 0, 0, 0.5)");
